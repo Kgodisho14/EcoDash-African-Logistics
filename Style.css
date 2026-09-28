@@ -8,7 +8,7 @@ body {
 
     font-family: Arial, sans-serif;
 
-    background-color: #1f3d2b;
+    background-color: #1f3d2c;
 
     color: white;
 
@@ -43,7 +43,7 @@ body {
     background: linear-gradient(
         #315f38,
         #8b6b3e
-    );
+    ); /*based on african colours mainly safari colours*/
 
 }
 
