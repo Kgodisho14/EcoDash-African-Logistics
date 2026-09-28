@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- This tells the browser which character set to use -->
+    <meta charset="UTF-8">
+
+    <!-- This makes the game work better on phones -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- This is the name shown on the browser tab -->
+    <title>EcoDash</title>
+
+    <!-- This connects the CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================
+         START SCREEN
+         ========================= -->
+
+    <div id="startScreen" class="screen">
+
+        <!-- Main game title -->
+        <h1>EcoDash</h1>
+
+        <!-- Short description -->
+        <p>African Digital Logistics Simulator</p>
+
+        <p>
+            Deliver supplies to the village.<br>
+            Avoid obstacles and manage your battery.
+        </p>
+
+        <!-- Button used to start the game -->
+        <button id="startButton" type="button">
+            Start Game
+        </button>
+
+        <!-- Button used to open instructions -->
+        <button id="instructionsButton" type="button">
+            Instructions
+        </button>
+
+        <!-- Displays the saved high score -->
+        <p>
+            High Score:
+            <span id="highScoreStart">0</span>
+        </p>
+
+    </div>
+
+
+    <!-- =========================
+         INSTRUCTIONS SCREEN
+         ========================= -->
+
+    <div id="instructionsScreen" class="screen hidden">
+
+        <h2>How To Play</h2>
+
+        <!-- Player controls -->
+        <p><strong>W</strong> = Move forward</p>
+        <p><strong>S</strong> = Move backwards</p>
+        <p><strong>A</strong> = Turn left</p>
+        <p><strong>D</strong> = Turn right</p>
+        <p><strong>P</strong> = Pause</p>
+
+        <p>
+            Drive to the village and deliver the supplies.
+        </p>
+
+        <!-- Returns to the main menu -->
+        <button id="backButton" type="button">
+            Back
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         GAME SCREEN
+         ========================= -->
+
+    <div id="gameScreen" class="hidden">
+
+        <!-- Heads Up Display -->
+        <div id="hud">
+
+            <!-- Player score -->
+            <span>
+                Score:
+                <b id="score">0</b>
+            </span>
+
+            <!-- Distance travelled -->
+            <span>
+                Distance:
+                <b id="distance">0</b>
+            </span>
+
+            <!-- Battery level -->
+            <span>
+                Battery:
+                <b id="battery">100</b>%
+            </span>
+
+            <!-- Energy efficiency -->
+            <span>
+                Efficiency:
+                <b id="efficiency">100</b>%
+            </span>
+
+            <!-- Day or night -->
+            <span id="dayNight">
+                Day
+            </span>
+
+            <!-- Pause button -->
+            <button id="pauseButton" type="button">
+                Pause
+            </button>
+
+        </div>
+
+        <!-- The game is drawn inside this canvas -->
+        <canvas id="gameCanvas"></canvas>
+
+    </div>
+
+
+    <!-- =========================
+         PAUSE SCREEN
+         ========================= -->
+
+    <div id="pauseScreen" class="screen hidden">
+
+        <h2>Game Paused</h2>
+
+        <!-- Continue playing -->
+        <button id="resumeButton" type="button">
+            Resume
+        </button>
+
+        <!-- Start the game again -->
+        <button id="restartPauseButton" type="button">
+            Restart
+        </button>
+
+        <!-- Return to menu -->
+        <button id="menuPauseButton" type="button">
+            Main Menu
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         GAME OVER SCREEN
+         ========================= -->
+
+    <div id="gameOverScreen" class="screen hidden">
+
+        <h2>Game Over</h2>
+
+        <p id="gameOverText">
+            Your battery ran out.
+        </p>
+
+        <p>
+            Score:
+            <span id="finalScore">0</span>
+        </p>
+
+        <p>
+            Distance:
+            <span id="finalDistance">0</span>
+        </p>
+
+        <p>
+            Efficiency:
+            <span id="finalEfficiency">0</span>%
+        </p>
+
+        <p>
+            High Score:
+            <span id="finalHighScore">0</span>
+        </p>
+
+        <!-- Restart the game -->
+        <button id="restartButton" type="button">
+            Restart
+        </button>
+
+        <!-- Return to main menu -->
+        <button id="menuButton" type="button">
+            Main Menu
+        </button>
+
+    </div>
+
+
+    <!-- =========================
+         MISSION COMPLETE SCREEN
+         ========================= -->
+
+    <div id="completeScreen" class="screen hidden">
+
+        <h2>Mission Complete!</h2>
+
+        <p>
+            You delivered the supplies to the village.
+        </p>
+
+        <p>
+            Score:
+            <span id="completeScore">0</span>
+        </p>
+
+        <p>
+            Distance:
+            <span id="completeDistance">0</span>
+        </p>
+
+        <p>
+            Efficiency:
+            <span id="completeEfficiency">0</span>%
+        </p>
+
+        <!-- Play another game -->
+        <button id="playAgainButton" type="button">
+            Play Again
+        </button>
+
+        <!-- Return to main menu -->
+        <button id="completeMenuButton" type="button">
+            Main Menu
+        </button>
+
+    </div>
+
+
+    <!-- This connects the JavaScript file -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
