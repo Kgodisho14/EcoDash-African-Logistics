@@ -125,7 +125,7 @@ Object-Oriented Programming
 
 I used object-oriented programming by creating a Vehicle class.
 
-The Vehicle class contains information about the vehicle, such as its position, speed, direction, width and height.
+The Vehicle class contains information about the vehicle such as its position, speed, direction, width and height.
 
 The Vehicle class also contains functions that control how the vehicle moves, resets and is drawn on the canvas.
 
@@ -133,7 +133,7 @@ Technologies Used
 
 I used HTML to create the structure of the game.
 
-I used CSS to style the game screens, buttons and HUD.
+I used CSS to style the game screens , buttons and HUD.
 
 I used JavaScript to create the game logic.
 
@@ -149,9 +149,9 @@ The project files need to be kept in the same folder.
 
 The folder contains index.html, style.css, main.js and README.md.
 
-To run the game, I open the index.html file in a web browser.
+To run the game you open the index.html file in a web browser.
 
-After opening the game, I press the Start Game button.
+After opening the game, you press the Start Game button.
 
 Project Folder Structure
 
