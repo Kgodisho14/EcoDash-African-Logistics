@@ -1,4 +1,4 @@
-/* This is the main style for the whole game */
+/* This is the main style for my EcoDash project */
 
 body {
 
@@ -21,7 +21,7 @@ body {
 
 .hidden {
 
-    display: none;
+    display: none !important;
 
 }
 
@@ -41,7 +41,7 @@ body {
     align-items: center;
 
     background: linear-gradient(
-        #315f38,
+        #2b4c30,
         #8b6b3e
     ); /*based on african colours mainly safari colours*/
 
