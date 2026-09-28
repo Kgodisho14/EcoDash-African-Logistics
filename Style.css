@@ -1,0 +1,248 @@
+/* This is the main style for the whole game */
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #1f3d2b;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+/* This class hides screens that are not being used */
+
+.hidden {
+
+    display: none;
+
+}
+
+
+/* This styles the menu and other screens */
+
+.screen {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: linear-gradient(
+        #315f38,
+        #8b6b3e
+    );
+
+}
+
+
+/* This styles the main game title */
+
+h1 {
+
+    font-size: 55px;
+
+    margin-bottom: 10px;
+
+    color: #ffd166;
+
+}
+
+
+/* This styles the other headings */
+
+h2 {
+
+    font-size: 35px;
+
+    color: #ffd166;
+
+}
+
+
+/* This styles the paragraphs */
+
+p {
+
+    font-size: 18px;
+
+    max-width: 600px;
+
+    line-height: 1.5;
+
+}
+
+
+/* This styles all buttons */
+
+button {
+
+    background-color: #e09f3e;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    margin: 8px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+/* This changes the button colour when the mouse is over it */
+
+button:hover {
+
+    background-color: #c47f22;
+
+}
+
+
+/* This is the main game area */
+
+#gameScreen {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    background-color: #17251a;
+
+}
+
+
+/* This is the information bar at the top */
+
+#hud {
+
+    min-height: 55px;
+
+    background-color: #253d2a;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+}
+
+
+/* This styles the HUD text */
+
+#hud span {
+
+    color: white;
+
+    font-size: 16px;
+
+}
+
+
+/* This makes the important numbers yellow */
+
+#hud b {
+
+    color: #ffd166;
+
+}
+
+
+/* This styles the pause button */
+
+#pauseButton {
+
+    background-color: #c44536;
+
+    padding: 8px 18px;
+
+    margin: 0;
+
+}
+
+
+/* This styles the game canvas */
+
+#gameCanvas {
+
+    display: block;
+
+    margin: 0 auto;
+
+    max-width: 100%;
+
+    height: auto;
+
+    background-color: #79a85b;
+
+    border-left: 3px solid #17251a;
+
+    border-right: 3px solid #17251a;
+
+}
+
+
+/* These styles are used on smaller screens */
+
+@media screen and (max-width: 700px) {
+
+    h1 {
+
+        font-size: 40px;
+
+    }
+
+    h2 {
+
+        font-size: 28px;
+
+    }
+
+    #hud {
+
+        gap: 10px;
+
+        font-size: 13px;
+
+    }
+
+    #hud span {
+
+        font-size: 13px;
+
+    }
+
+    button {
+
+        padding: 10px 18px;
+
+    }
+
+}
